@@ -1,117 +1,205 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Arial", sans-serif;
-    background-image: url("bg2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  header {
-    display: flex;
-    justify-content: flex-start; 
-    align-items: center;
-    padding: 20px;
-    background-color: #2f3e46;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 50px;
-    margin-right: 20px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    margin-left: 20px; 
-  }
-  
-  nav ul li {
-    margin-left: 20px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* .landing-page {
-    position: relative;
-    background: url("background-image.jpg");
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; 
-  } */
-  
-  .overlay {
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .content {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  .content h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    margin-top: 40px;
-  }
-  
-  .logo-mid img {
-    width: 100px; 
-    margin-bottom: 20px;
-  }
-  
-  .content p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .buttons button {
-    background-color: #387F39;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .buttons button a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-  }
-  
-  .buttons button:hover {
-    background-color: #ced4da;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2f3e46;
+}
+
+.left-header{
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px; 
+  margin-right: 10px;
+}
+
+.profile img{
+  width: 30px;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px; 
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.landing-page {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-page-in {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-slide {
+  width: 65%; /* Bagian slide mengambil 65% dari lebar kontainer */
+  position: relative;
+}
+
+.image-slide img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.slide-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.slide-caption h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.slide-caption p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.sidebar {
+  width: 30%; /* Sidebar mengambil 30% dari lebar kontainer */
+  padding-left: 20px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.latest, .podcast {
+  cursor: pointer;
+}
+
+.article-list {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-item {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.article-item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.article-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Efek overlay gelap */
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1; /* Agar berada di atas overlay */
+}
+
+.content h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.logo-mid img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons button {
+  background-color: #387F39;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.buttons button:hover {
+  background-color: #ced4da;
+}
