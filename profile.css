@@ -1,93 +1,127 @@
+/* Mengatur styling umum */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
+/* Styling background untuk body */
 body {
-    background-image: url('background.jpg');
+    background-image: url('Screenshot 2024-10-02 234229.png'); /* Sesuaikan dengan background yang diinginkan */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
-.navbar {
+/* Navbar styling */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    padding: 10px 40px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-.menu a {
-    margin: 0 15px;
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.left-header .logo img {
+    width: 40px;
+    margin-right: 15px;
+}
+
+.left-header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.left-header nav ul li {
+    margin-left: 20px;
+}
+
+.left-header nav ul li a {
+    color: white;
     text-decoration: none;
-    color: white;
+    font-size: 16px;
 }
 
-.home-icon {
-    height: 30px;
+.left-header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.profile {
+    margin-right: 40px;
+}
+
+.profile img {
     width: 30px;
 }
 
-.profile-image {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-}
-
+/* Profile Container */
 .profile-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
+    height: calc(100vh - 70px); /* Mengurangi tinggi header */
+    position: relative;
 }
 
+/* Overlay styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Efek overlay gelap */
+    z-index: 0;
+}
+
+/* Profile Content */
 .profile-content {
     background: rgba(255, 255, 255, 0.9);
-    padding: 40px;
+    padding: 40px 60px;
     border-radius: 10px;
     position: relative;
+    z-index: 1; /* Agar di atas overlay */
     width: 400px;
 }
 
-h1 {
+.profile-content h1 {
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 2em;
+    margin-bottom: 30px;
+    font-size: 2.5em;
     color: #333;
 }
 
 .input-group {
-    margin-bottom: 15px;
-}
-
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
+    margin-bottom: 20px;
 }
 
 .input-group input {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 16px;
+    outline: none;
 }
 
 .profile-picture {
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
-    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     border: 4px solid #fff;
 }
@@ -96,13 +130,13 @@ h1 {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    width: 35px;
+    height: 35px;
     background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #ddd;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ddd;
     cursor: pointer;
 }
