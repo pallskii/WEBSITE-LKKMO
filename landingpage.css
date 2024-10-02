@@ -63,7 +63,7 @@ nav ul li a:hover {
 }
 
 .landing-page-in {
-  padding: 40px 20px;
+  padding: 40px 0; /* Hilangkan padding kiri dan kanan */
   background-color: #f4f4f4;
 }
 
@@ -76,13 +76,18 @@ nav ul li a:hover {
 }
 
 .image-slide {
-  width: 65%; /* Bagian slide mengambil 65% dari lebar kontainer */
+  width: 65%;
   position: relative;
+  margin: 0; /* Hilangkan margin untuk menghindari ruang kosong */
+  padding: 0; /* Hilangkan padding untuk menempel ke kiri */
 }
 
 .image-slide img {
   width: 100%;
-  border-radius: 8px;
+  height: auto;
+  display: block;
+  margin: 0; /* Hilangkan margin agar gambar menempel di tepi kiri */
+  padding: 0; /* Hilangkan padding agar gambar menempel di tepi kiri */
 }
 
 .slide-caption {
@@ -106,9 +111,10 @@ nav ul li a:hover {
 }
 
 .sidebar {
-  width: 30%; /* Sidebar mengambil 30% dari lebar kontainer */
+  width: 30%;
   padding-left: 20px;
 }
+
 
 .sidebar-header {
   display: flex;
