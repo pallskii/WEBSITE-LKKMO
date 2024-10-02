@@ -1,0 +1,22 @@
+body {
+    background-color: #9BEC00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Pastikan body setinggi viewport */
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .logo img {
+    height: 300px;
+    background-color: transparent;
+    /* Tambahkan properti ini untuk memastikan gambar selalu berada di tengah secara vertikal */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    mix-blend-mode: multiply;
+    background-image: none !important;
+  }

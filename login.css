@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    /* ... gaya lainnya ... */
+    /* animation: mymove 2s infinite; */
+
+}
+  
+  @keyframes mymove {
+    50% {transform: translateY(-10px);}
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image : url("bg.jpg");
+    background-size: cover;
+    backdrop-filter:blur(10px) ;
+}
+
+.login-container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 10px;
+    background: transparent;
+}
+
+.logo h2 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 30px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.forgot-password{
+    color : #000;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+.login-btn {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+.google-btn{
+    padding: 12px;
+    background-color: #ffffff;
+    color: :black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top : 10px;
+}
+
+.google-btn:hover{
+    background-color: #0B2F9F;
+}
+
+.create-account {
+    margin-top: 20px;
+}
+
+.create-account a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
+
