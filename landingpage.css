@@ -1,211 +1,248 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body {
-  font-family: "Arial", sans-serif;
-}
+    body {
+      font-family: "Arial", sans-serif;
+    }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #2f3e46;
-}
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #2f3e46;
+    }
 
-.left-header{
-  display: flex;
-  align-items: center;
-}
+    .left-header{
+      display: flex;
+      align-items: center;
+    }
 
-.logo img {
-  width: 30px; 
-  margin-right: 10px;
-}
+    .logo img {
+      width: 30px; 
+      margin-right: 10px;
+    }
 
-.profile img{
-  width: 30px;
-  margin-right: 20px;
-}
+    .profile img{
+      width: 30px;
+      margin-right: 20px;
+    }
 
-nav ul {
-  list-style-type: none;
-  display: flex;
-}
+    nav ul {
+      list-style-type: none;
+      display: flex;
+    }
 
-nav ul li {
-  margin-left: 20px;
-}
+    nav ul li {
+      margin-left: 20px;
+    }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px; 
-}
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px; 
+    }
 
-nav ul li a:hover {
-  text-decoration: underline;
-}
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
 
-.landing-page {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-image: url("bg2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    .landing-page {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-image: url("bg2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-.landing-page-in {
-  padding: 40px 0; /* Hilangkan padding kiri dan kanan */
-  background-color: #f4f4f4;
-}
+    .landing-page-in {
+      padding: 40px 0; /* Hilangkan padding kiri dan kanan */
+      background-color: #f4f4f4;
+    }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-.image-slide {
-  width: 65%;
-  position: relative;
-  margin: 0; /* Hilangkan margin untuk menghindari ruang kosong */
-  padding: 0; /* Hilangkan padding untuk menempel ke kiri */
-}
+    .image-slide {
+      width: 65%;
+      position: relative;
+      margin: 0; /* Hilangkan margin untuk menghindari ruang kosong */
+      padding: 0; /* Hilangkan padding untuk menempel ke kiri */
+    }
 
-.image-slide img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0; /* Hilangkan margin agar gambar menempel di tepi kiri */
-  padding: 0; /* Hilangkan padding agar gambar menempel di tepi kiri */
-}
+    .image-slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0; /* Hilangkan margin agar gambar menempel di tepi kiri */
+      padding: 0; /* Hilangkan padding agar gambar menempel di tepi kiri */
+    }
 
-.slide-caption {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  border-radius: 5px;
-}
+    .slide-caption {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
 
-.slide-caption h3 {
-  font-size: 24px;
-  margin: 0;
-}
+    .slide-caption h3 {
+      font-size: 24px;
+      margin: 0;
+    }
 
-.slide-caption p {
-  margin: 5px 0 0;
-  font-size: 14px;
-}
+    .slide-caption p {
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
 
-.sidebar {
-  width: 30%;
-  padding-left: 20px;
-}
-
-
-.sidebar-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.latest, .podcast {
-  cursor: pointer;
-}
-
-.article-list {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.article-item {
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.article-item p {
-  margin: 0;
-  font-size: 16px;
-}
-
-.article-item:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-}
+    .sidebar {
+      width: 30%;
+      padding-left: 20px;
+    }
 
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Efek overlay gelap */
-}
+    .sidebar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden; /* Untuk menghindari elemen keluar dari container */
+    }
+    
+    .tab {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      flex: 1;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    
+    .tab img {
+      margin-right: 10px;
+    }
+    
+    .divider {
+      width: 1px;
+      background-color: #ddd;
+      height: 100%;
+    }
+    
+    .latest, .podcast {
+      cursor: pointer;
+      text-align: center;
+    }
+    
+    .latest {
+      background-color: #f9f9f9; /* Warna latar untuk tab Latest */
+    }
+    
+    .podcast {
+      background-color: #f9f9f9; /* Warna latar untuk tab Podcast */
+    }
+    
+    .latest:hover, .podcast:hover {
+      background-color: #eaeaea;
+    }
+    
 
-.content {
-  position: relative;
-  text-align: center;
-  color: white;
-  z-index: 1; /* Agar berada di atas overlay */
-}
+    .article-list {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-.content h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
-  margin-top: 40px;
-}
+    .article-item {
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
 
-.logo-mid img {
-  width: 100px;
-  margin-bottom: 20px;
-}
+    .article-item p {
+      margin: 0;
+      font-size: 16px;
+    }
 
-.content p {
-  font-size: 18px;
-  max-width: 600px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-}
+    .article-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
 
-.buttons button {
-  background-color: #387F39;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Efek overlay gelap */
+    }
 
-.buttons button a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-}
+    .content {
+      position: relative;
+      text-align: center;
+      color: white;
+      z-index: 1; /* Agar berada di atas overlay */
+    }
 
-.buttons button:hover {
-  background-color: #ced4da;
-}
+    .content h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+      margin-top: 40px;
+    }
+
+    .logo-mid img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .buttons button {
+      background-color: #387F39;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .buttons button a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+    }
+
+    .buttons button:hover {
+      background-color: #ced4da;
+    }
