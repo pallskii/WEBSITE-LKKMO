@@ -76,40 +76,96 @@
     }
 
     .image-slide {
-      width: 65%;
       position: relative;
-      margin: 0; /* Hilangkan margin untuk menghindari ruang kosong */
-      padding: 0; /* Hilangkan padding untuk menempel ke kiri */
+      width: 100%;
     }
-
+    
     .image-slide img {
       width: 100%;
       height: auto;
-      display: block;
-      margin: 0; /* Hilangkan margin agar gambar menempel di tepi kiri */
-      padding: 0; /* Hilangkan padding agar gambar menempel di tepi kiri */
     }
+    
+    .image-slide {
+      position: relative;
+      width: 100%;
+    }
+    
+    .image-slide img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+      border-radius: 50%; /* Tetap membuat panah berbentuk lingkaran */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background-color: rgba(255, 255, 255, 0.7); Hapus atau komentari bagian ini */
+      background-color: transparent; /* Pastikan tidak ada background */
+    }
+    
+    .arrow img {
+      width: 100%; /* Ikon panah tetap terlihat */
+      height: 100%;
+    }
+    
+    .arrow.left {
+      left: 10px;
+    }
+    
+    .arrow.right {
+      right: 10px;
+    }
+    
+    .arrow:hover {
+      opacity: 1;
+    }
+    
+    
 
     .slide-caption {
       position: absolute;
       bottom: 20px;
       left: 20px;
       color: white;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 10px 20px;
+      /* background-color: rgba(0, 0, 0, 0.5);  Hapus atau komentari bagian ini untuk menghilangkan latar hitam */
+      padding: 15px 25px;
       border-radius: 5px;
+      max-width: 80%; /* Tentukan lebar maksimal */
     }
-
+    
     .slide-caption h3 {
       font-size: 24px;
-      margin: 0;
+      margin: 0 0 10px 0;
+      font-weight: bold;
     }
-
-    .slide-caption p {
-      margin: 5px 0 0;
+    
+    .caption-info {
+      display: flex;
+      gap: 20px; /* Jarak antara tanggal dan penulis */
       font-size: 14px;
     }
-
+    
+    .caption-info .icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+    }
+    
+    .caption-info div {
+      display: flex;
+      align-items: center;
+    }
+    
+    
     .sidebar {
       width: 30%;
       padding-left: 20px;
@@ -171,22 +227,34 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-
+    
     .article-item {
+      display: flex;
+      align-items: center;
       margin-bottom: 15px;
-      padding-bottom: 10px;
+      padding-bottom: 15px;
       border-bottom: 1px solid #ddd;
     }
-
+    
+    .article-item img {
+      width: 80px; /* Sesuaikan lebar gambar */
+      height: 80px; /* Sesuaikan tinggi gambar */
+      margin-right: 20px; /* Jarak antara gambar dan teks */
+      border-radius: 5px;
+      object-fit: cover; /* Menjaga proporsi gambar */
+    }
+    
     .article-item p {
       margin: 0;
       font-size: 16px;
+      font-weight: bold; /* Sesuaikan dengan tampilan gambar */
     }
-
+    
     .article-item:last-child {
       border-bottom: none;
       margin-bottom: 0;
     }
+    
 
 
     .overlay {
