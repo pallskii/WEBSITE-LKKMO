@@ -8,7 +8,7 @@
 
 /* Styling background untuk body */
 body {
-    background-image: url('Screenshot 2024-10-02 234229.png'); /* Sesuaikan dengan background yang diinginkan */
+    background-image: url("bg2.jpg"); /* Sesuaikan dengan background yang diinginkan */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,8 +20,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
-    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    background-color: #2f3e46;
 }
 
 .left-header {
@@ -30,8 +30,8 @@ header {
 }
 
 .left-header .logo img {
-    width: 40px;
-    margin-right: 15px;
+    width: 30px;
+    margin-right: 10px;
 }
 
 .left-header nav ul {
@@ -53,12 +53,14 @@ header {
     text-decoration: underline;
 }
 
+/* Profile styling */
 .profile {
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .profile img {
     width: 30px;
+    margin-right: 20px;
 }
 
 /* Profile Container */
@@ -78,7 +80,8 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Efek overlay gelap */
-    z-index: 0;
+    background-repeat: repeat;
+    z-index: 1;
 }
 
 /* Profile Content */
@@ -89,54 +92,46 @@ header {
     position: relative;
     z-index: 1; /* Agar di atas overlay */
     width: 400px;
+    text-align: center; /* Center align text */
 }
 
+/* Profile Picture Styling */
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    display: block;
+}
+
+/* Form Styling */
 .profile-content h1 {
-    text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 2.5em;
     color: #333;
 }
 
 .input-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .input-group input {
     width: 100%;
     padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: none;
+    border-radius: 0px;
     font-size: 16px;
     outline: none;
+    background-color: #fff; /* Memberi efek latar belakang agar terlihat */
 }
 
-.profile-picture {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid #fff;
-}
-
-.camera-icon {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 35px;
-    height: 35px;
-    background-color: #fff;
-    border-radius: 50%;
-    border: 2px solid #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.input-group input::placeholder {
+    color: #999;
 }
