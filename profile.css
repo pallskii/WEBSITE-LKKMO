@@ -72,6 +72,8 @@ header {
     position: relative;
 }
 
+
+
 /* Overlay styling */
 .overlay {
     position: absolute;
@@ -86,15 +88,24 @@ header {
 
 /* Profile Content */
 .profile-content {
-    background: rgba(255, 255, 255, 0.9);
     padding: 40px 60px;
     border-radius: 10px;
     position: relative;
     z-index: 1; /* Agar di atas overlay */
-    width: 400px;
+    /* width: 400px; */
     text-align: center; /* Center align text */
 }
 
+.login-container {
+    display: flex;
+    justify-content: space-between ;
+    align-items: start;
+    gap: 64px;
+}
+
+.login-form-container {
+    background-color: transparent;
+ }
 /* Profile Picture Styling */
 .profile-picture {
     display: flex;
@@ -129,7 +140,8 @@ header {
     border-radius: 0px;
     font-size: 16px;
     outline: none;
-    background-color: #fff; /* Memberi efek latar belakang agar terlihat */
+    background-color: transparent; /* Memberi efek latar belakang agar terlihat */
+    border-bottom: 1px solid white;
 }
 
 .input-group input::placeholder {
