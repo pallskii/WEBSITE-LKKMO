@@ -126,23 +126,19 @@ header {
 
 /* Profile Content */
 .profile-content {
-<<<<<<< HEAD
-=======
+padding: 40px;
+position: relative;
+z-index: 1; /* Agar di atas overlay */
+text-align: left;
+color: white;
 
-  padding: 40px;
-  position: relative;
-  z-index: 1; /* Agar di atas overlay */
-  text-align: left;
-  color: white;
-
-    background: rgba(255, 255, 255, 0.9);
->>>>>>> 4760e2361f5d97a8ff0bc7d8ba1893ecd0b998cc
-    padding: 40px 60px;
-    border-radius: 10px;
-    position: relative;
-    z-index: 1; /* Agar di atas overlay */
-    /* width: 400px; */
-    text-align: center; /* Center align text */
+background: rgba(255, 255, 255, 0.9);
+padding: 40px 60px;
+border-radius: 10px;
+position: relative;
+z-index: 1; /* Agar di atas overlay */
+/* width: 400px; */
+text-align: center; /* Center align text */
 
 }
 

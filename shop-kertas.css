@@ -62,12 +62,17 @@ nav ul li a:hover {
   align-items: center;
 }
 
+h1 {
+  font-size: 24px;
+  color: #2c6d44;
+}
+
 .content {
   margin-top: 50px;
 }
 
 .content a {
-  padding: 20px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -81,39 +86,43 @@ nav ul li a:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-items: center;
-  margin-top: 0px;
-}
-
-h1{
-    margin-bottom: 30px;
-    transform: translate(90px, 0px);
-    color: #2f3e46;
-    font-family: 'Times New Roman', Times, serif;
+  margin-top: 20px;
 }
 
 .item {
   text-align: center;
   border: 1px solid #000;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 0;
   min-width: 300px;
   min-height: 150px;
-}
-.img {
+
+  img {
     width: 100%;
-    border-radius: 1px;
+    border-radius: 10px;
   }
+
+  .item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .quantity input {
+      width: 30px;
+      text-align: center;
+    }
+  }
+}
 
 .item img {
   width: 100px;
   height: 100px;
 }
 
-.item p{
-position: center;
-margin-top: 30px;
-font-weight: bold;
-size: 100px;
+.item p {
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 .footer {
