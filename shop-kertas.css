@@ -78,7 +78,12 @@ h1 {
   text-align: center;
   color: #2c6d44;
   cursor: pointer;
-  font-size: larger;
+  font-size: 25px;
+  margin-bottom: 30px;
+  transform: translate(90px, 0px);
+  color: #2f3e46;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
 .grid-container {
@@ -130,6 +135,7 @@ h1 {
   justify-content: center;
   margin-top: 50px;
 }
+
 
 .jual-button {
   background-color: #80805c;
