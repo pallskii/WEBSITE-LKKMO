@@ -1,0 +1,143 @@
+/* Pastikan body dan html mengisi layar penuh dan tidak scroll */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2f3e46;
+  height: 70px; /* Sesuaikan tinggi header */
+}
+
+/* Kiri header dengan logo */
+.left-header {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling untuk logo kiri */
+.logo img {
+  width: 40px; /* Sesuaikan ukuran logo kiri */
+  margin-right: 20px;
+}
+
+/* Tengah header dengan ikon recycle */
+.center-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* Agar logo tengah berada tepat di tengah */
+}
+
+.center-header .recycle-logo img {
+  width: 6px; /* Sesuaikan ukuran logo tengah */
+}
+
+/* Kanan header dengan profile */
+.profile img {
+  width: 40px; /* Sesuaikan ukuran ikon profil */
+  margin-left: 20px;
+}
+
+
+/* Remove ul if not needed in the header */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Area konten harus menyesuaikan tinggi dan memenuhi layar */
+.content {
+  flex-grow: 1;
+  margin-top: 20px;
+}
+
+/* Link back (kaca) styling */
+.content a {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #2c6d44;
+  cursor: pointer;
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: #2f3e46;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+/* Grid for items */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+/* Item styling */
+.item {
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 300px;
+  min-height: 150px;
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+}
+
+.item p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Footer tetap di bawah */
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.jual-button {
+  background-color: #80805c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.jual-button:hover {
+  background-color: #6d6d4a;
+}
