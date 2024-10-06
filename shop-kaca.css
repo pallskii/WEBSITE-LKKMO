@@ -39,7 +39,7 @@ header {
 }
 
 .center-header .recycle-logo img {
-  width: 6px; /* Sesuaikan ukuran logo tengah */
+  width: 50px; /* Sesuaikan ukuran logo tengah */
 }
 
 /* Kanan header dengan profile */
@@ -48,27 +48,6 @@ header {
   margin-left: 20px;
 }
 
-
-/* Remove ul if not needed in the header */
-nav ul {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
 
 /* Area konten harus menyesuaikan tinggi dan memenuhi layar */
 .content {
@@ -124,7 +103,7 @@ nav ul li a:hover {
 .footer {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .jual-button {
