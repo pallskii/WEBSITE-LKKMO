@@ -3,32 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Page</title>
+    <title>Profile Page with Dropdown</title>
     <link rel="stylesheet" href="profile.css" />
   </head>
-  
   <body>
     <header>
-
       <div class="left-header">
         <div class="logo">
-          <img src="Vector.png" alt="Home Logo" />
-
-        <div class="left-header">
-            <div class="logo">
-                <img src="Vector.png" alt="Recygiene Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <!-- Profile Logo -->
-        <div class="profile">
-            <img src="Group.png" alt="Profile Logo" class="profile-icon">
+          <img src="Vector.png" alt="Recygiene Logo" />
         </div>
         <nav>
           <ul>
@@ -37,72 +19,89 @@
           </ul>
         </nav>
       </div>
+
+      <!-- Profile Icon with Dropdown -->
       <div class="profile">
-        <img src="Group.png" alt="Profile Logo" />
+        <img src="Group.png" alt="Profile Logo" class="profile-icon" id="profile-btn" />
+        <!-- Dropdown tools -->
+        <div id="tools-dropdown" class="dropdown-content">
+          <a href="#">Profile</a>
+          <a href="#">Log Out</a>
+        </div>
       </div>
     </header>
 
+    <!-- Profile Section -->
+    <div class="profile-section">
+      <div class="profile-container">
+        <div class="profile-content">
+          <div class="profile-picture">
+            <img
+              src="buletan-profile.png"
+              alt="Profile Picture"
+              class="profile-pic"
+            />
+            <div class="camera-icon">
+              <img src="camera-icon.png" alt="Camera" />
+            </div>
+          </div>
 
-    <section class="profile-section">
-      <div class="profile-overlay"></div>
-      <div class="profile-content">
-        <h1>Profile</h1>
-        <div class="form-container">
+          <h1>Profile</h1>
           <form>
             <div class="input-group">
-              <input type="text" id="username" name="username" placeholder="Username" />
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Username"
+              />
             </div>
             <div class="input-group">
               <input type="email" id="email" name="email" placeholder="Email" />
             </div>
             <div class="input-group">
-              <input type="password" id="password" name="password" placeholder="Password" />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+              />
             </div>
             <div class="input-group">
-              <input type="text" id="location" name="location" placeholder="Location" />
+              <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Location"
+              />
             </div>
             <div class="input-group">
               <input type="tel" id="phone" name="phone" placeholder="Phone" />
             </div>
           </form>
-          <div class="profile-picture">
-            <img src="buletan-profile.png" alt="Profile Picture" class="profile-pic" />
-            <div class="camera-icon">
-              <img src="camera-icon.png" alt="Upload Photo" />
-            </div>
-          </div>
-
-    <div class="profile-container">
-        <div class="overlay"></div>
-        <div class="profile-content">
-            <!-- Bagian profile picture berada di tengah halaman -->
-            <h1>Profile</h1>
-            <div class="login-container">
-                
-                <form class="login-form-container">
-                    <div class="input-group">
-                        <input type="text" id="username" name="username" placeholder="Username">
-                    </div>
-                    <div class="input-group">
-                        <input type="email" id="email" name="email" placeholder="Email">
-                    </div>
-                    <div class="input-group">
-                        <input type="password" id="password" name="password" placeholder="Password">
-                    </div>
-                    <div class="input-group">
-                        <input type="text" id="location" name="location" placeholder="Location">
-                    </div>
-                    <div class="input-group">
-                        <input type="tel" id="phone" name="phone" placeholder="Phone">
-                    </div>
-                </form>
-                <div class="profile-picture">
-                    <img src="buletan profile.png" alt="Profile Picture" class="profile-pic">
-                </div>
-            </div>
-
         </div>
       </div>
-    </section>
-</body>
+    </div>
+
+    <!-- Script for Dropdown Functionality -->
+    <script>
+      // Saat user mengklik profile button
+      document.getElementById("profile-btn").addEventListener("click", function () {
+        document.getElementById("tools-dropdown").classList.toggle("show");
+      });
+
+      // Tutup dropdown saat mengklik di luar area dropdown
+      window.onclick = function (event) {
+        if (!event.target.matches(".profile-icon")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
 </html>
