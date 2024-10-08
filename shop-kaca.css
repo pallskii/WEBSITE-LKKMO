@@ -1,36 +1,31 @@
-/* Pastikan body dan html mengisi layar penuh dan tidak scroll */
 body,
 html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
   height: 100%;
-  overflow: hidden;
+  font-family: Arial, sans-serif;
 }
 
-/* Header Styling */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: #2f3e46;
-  height: 70px; /* Sesuaikan tinggi header */
 }
 
-/* Kiri header dengan logo */
-.left-header {
+.left-header{
   display: flex;
   align-items: center;
 }
 
-/* Styling untuk logo kiri */
-.logo img {
-  width: 40px; /* Sesuaikan ukuran logo kiri */
-  margin-right: 20px;
-}
-
-/* Tengah header dengan ikon recycle */
 .center-header {
   display: flex;
   justify-content: center;
@@ -42,20 +37,53 @@ header {
   width: 50px; /* Sesuaikan ukuran logo tengah */
 }
 
-/* Kanan header dengan profile */
-.profile img {
-  width: 40px; /* Sesuaikan ukuran ikon profil */
+
+.logo img {
+  width: 30px; 
+  margin-right: 10px;
+}
+
+.profile img{
+  width: 30px;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
   margin-left: 20px;
 }
 
-
-/* Area konten harus menyesuaikan tinggi dan memenuhi layar */
-.content {
-  flex-grow: 1;
-  margin-top: 20px;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px; 
 }
 
-/* Link back (kaca) styling */
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Center Header */
+.center-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #2c6d44;
+}
+
+.content {
+  margin-top: 50px;
+}
+
 .content a {
   padding: 0 20px;
   display: flex;
@@ -65,28 +93,44 @@ header {
   cursor: pointer;
   font-size: 25px;
   margin-bottom: 30px;
+  transform: translate(90px, 0px);
   color: #2f3e46;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
 }
 
-/* Grid for items */
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-items: center;
   margin-top: 20px;
 }
 
-/* Item styling */
 .item {
   text-align: center;
   border: none;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 0;
   min-width: 300px;
   min-height: 150px;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .quantity input {
+      width: 30px;
+      text-align: center;
+    }
+  }
 }
 
 .item img {
@@ -99,71 +143,11 @@ header {
   font-weight: bold;
 }
 
-/* Footer tetap di bawah */
 .footer {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  margin-top: 50px;
 }
-
-.item-info {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Menjaga semua elemen di tengah */
-  gap: 10px; /* Jarak antar elemen */
-  margin-top: 10px;
-}
-
-.quantity {
-  display: inline-flex;
-  align-items: center;
-}
-
-.quantity {
-  display: inline-flex;
-  align-items: center;
-}
-
-.quantity button {
-  width: 30px; /* Atur lebar tombol */
-  height: 30px; /* Atur tinggi tombol */
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  font-size: 18px; /* Ukuran teks pada tombol */
-  cursor: pointer;
-}
-
-.quantity input {
-  width: 50px; /* Lebar input angka */
-  height: 30px; /* Tinggi input angka */
-  text-align: center;
-  border: 1px solid #ccc;
-  font-size: 18px; /* Ukuran teks dalam input */
-}
-
-.quantity button:hover {
-  background-color: #ddd;
-}
-  
-
-
-.minus-btn,
-.plus-btn {
-  width: 30px;
-  height: 30px;
-  background-color: #80805c;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
-}
-
-.minus-btn:hover,
-.plus-btn:hover {
-  background-color: #6d6d4a;
-}
-
 
 
 .jual-button {
