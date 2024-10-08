@@ -82,7 +82,7 @@ header {
 /* Item styling */
 .item {
   text-align: center;
-  border: 1px solid #000;
+  border: none;
   border-radius: 10px;
   padding: 10px;
   min-width: 300px;
@@ -105,6 +105,66 @@ header {
   justify-content: center;
   padding: 10px;
 }
+
+.item-info {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Menjaga semua elemen di tengah */
+  gap: 10px; /* Jarak antar elemen */
+  margin-top: 10px;
+}
+
+.quantity {
+  display: inline-flex;
+  align-items: center;
+}
+
+.quantity {
+  display: inline-flex;
+  align-items: center;
+}
+
+.quantity button {
+  width: 30px; /* Atur lebar tombol */
+  height: 30px; /* Atur tinggi tombol */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  font-size: 18px; /* Ukuran teks pada tombol */
+  cursor: pointer;
+}
+
+.quantity input {
+  width: 50px; /* Lebar input angka */
+  height: 30px; /* Tinggi input angka */
+  text-align: center;
+  border: 1px solid #ccc;
+  font-size: 18px; /* Ukuran teks dalam input */
+}
+
+.quantity button:hover {
+  background-color: #ddd;
+}
+  
+
+
+.minus-btn,
+.plus-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #80805c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.minus-btn:hover,
+.plus-btn:hover {
+  background-color: #6d6d4a;
+}
+
+
 
 .jual-button {
   background-color: #80805c;

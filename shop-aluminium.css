@@ -86,7 +86,7 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     justify-content: flex-start; /* Menyelaraskan elemen ke kiri */
-    margin-left: 20px;  /* Memberikan jarak dari tepi kiri */
+    margin-left: -400px;  /* Memberikan jarak dari tepi kiri */
   }
   
 
@@ -103,7 +103,7 @@ h1 {
 /* Item di grid */
 .item {
   text-align: center;
-  border: 1px solid #000;
+  border: none;
   border-radius: 10px;
   padding: 10px 0;
   min-width: 300px;
