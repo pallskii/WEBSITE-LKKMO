@@ -3,8 +3,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Pastikan body setinggi viewport */
-  margin: 0; /* Hilangkan margin default */
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
@@ -14,11 +14,19 @@ body {
 
 .logo {
   height: 300px;
-  background-color: transparent;
-  /* Tambahkan properti ini untuk memastikan gambar selalu berada di tengah secara vertikal */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: multiply;
+  position: relative;
+  animation: logoMove 4s ease-out forwards;
+}
+
+/* Animasi logo untuk berhenti di tengah */
+@keyframes logoMove {
+  0% {
+    transform: translate(-400px, -200px) rotate(0deg); /* Mulai dari luar layar */
+  }
+  80% {
+    transform: translate(0, 0) rotate(340deg); /* Hampir sampai di tengah, melambat */
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg); /* Berhenti tepat di tengah */
+  }
 }
