@@ -2,12 +2,14 @@ body,
 html {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
+  width: 100%;
 }
 
 .container {
-  width: 60%;
-  margin: auto;
+  overflow: hidden;
+  width: 100%;
 }
 
 /* Header Styling */
@@ -65,10 +67,10 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-
 main {
-  padding: 20px;
   width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .order-header {
@@ -76,6 +78,8 @@ main {
   flex-direction: column;
   align-items: start;
   margin-bottom: 20px;
+  margin: 20px auto;
+  width: 70%;
 }
 
 .order-header h2 {
@@ -93,7 +97,8 @@ main {
   text-align: center;
   display: flex;
   justify-content: center;
-  width: 100%;
+  margin: 20px auto;
+  width: 70%;
 }
 
 .progress {
@@ -159,8 +164,10 @@ main {
 
 .order-details {
   border: 1px solid #ddd;
-  padding: 10px;
-  margin-top: 50px;
+  padding-left: 10px;
+  padding-left: 10px;
+  margin: 20px auto;
+  width: 70%;
 }
 
 .item {
@@ -204,6 +211,8 @@ main {
 .total {
   margin: 20px 0;
   text-align: right;
+  margin: 20px auto;
+  width: 70%;
 }
 
 .total p,
